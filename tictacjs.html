@@ -4,28 +4,69 @@
   <title>Tic-Tac-JS</title>
   <script src="https://code.jquery.com/jquery.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.4/jasmine.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
   <style>
     body {
-        font-family: sans-serif;
+        font-family: 'Homemade Apple', cursive;
+        font-size: 1.7rem;
+        display: grid;
+        align-self: center;
+        text-align: center;
+        color: white;
+        background-color: black;
+        width: 40%;
+        margin: auto;
     }
 
     #game-board {
-        border: solid 1px black;
+        border: solid 3px white;
         margin-bottom: 2em;
     }
 
     #game-board td {
-        border: solid 1px black;
-        height: 80px;
-        width: 80px;
+        cursor: pointer;
+        font-size: 9rem;
+        border: solid 2px white;
+        height: 200px;
+        width: 100px;
         text-align: center;
         font-size: 45px;
+        transition: 2s;
+    }
+    #game-board td:hover{
+        background-color: rgb(83, 75, 75);
+    }
+    h1{
+        margin: auto;
+        display: grid;
+        width: 70%;
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-bottom: 8%;
+    }
+    h1 button{
+        cursor: pointer;
+        padding: 1%;
+        padding-bottom: .2%;
+        padding-left: 4%;
+        padding-right: 4%;
+        font-family: 'Homemade Apple', cursive;
+        font-size: 1.3rem;
+        border: solid 2px white;
+        color: white;
+        background-color: black;
+        transition: 2s;
+    }
+    h1 button:hover {
+        background-color: rgb(83, 75, 75);
     }
   </style>
 </head>
 <body>
 
-<h1>Tic Tac JS
+<h1>tic tac js
   <button id="start-game">Start!</button>
 </h1>
 
