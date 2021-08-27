@@ -33,9 +33,9 @@ describe('Single game test', async ()=>{
         await X.click();
     })
       
-    // test('Computer places an O', async ()=>{
-    //     let board= await(await driver).findElement(By.xpath('//*[@id="game-board"]/tbody'))
-    //     expect(await board).toContain("O")
-    // })
+    test('Computer places an O', async ()=>{
+        let board= await(await driver).findElement(By.xpath('//*[@id="cell-1"]')).getText()
+        expect(board).toEqual("O")
+    })
  
 })
